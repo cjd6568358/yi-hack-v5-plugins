@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# location:/home/base/init.sh
+# location:/home/base/tools/cat.hook
+# hook system cat command for support < 4GB sd card
+if [ "$1" == "/sys/block/mmcblk0/size" ]; then
+    echo 7802880
+else
+    /bin/cat "$@"
+fi
