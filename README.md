@@ -13,6 +13,7 @@ reference https://github.com/alienatedsec/yi-hack-v5
 2.  mv samba-plugin/yi_dome_init.sh /home/yi_dome_init.sh
 3.  chmod +x /home/yi_dome_init.sh
 4.  echo `/home/yi_dome_init.sh` >> /etc/init.d/S20yi-hack-v5
+5.  reboot 
 
 ## small card plugin guide
 1.  ssh login xiaoyi camera
@@ -20,3 +21,4 @@ reference https://github.com/alienatedsec/yi-hack-v5
 3.  vim /home/base/init.sh
 3.1  insert `mv /home/base/tools/cat.hook /home/base/tools/cat && chmod +x /home/base/tools/cat` before `checkdisk`
 3.2  insert `mv /home/base/tools/cat /home/base/tools/cat.hook` after `checkdisk`
+4.  reboot
